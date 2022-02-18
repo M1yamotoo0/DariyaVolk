@@ -1,0 +1,65 @@
+.about-me {
+    &__top-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: minmax(410px, 450px);
+    }
+    &__bottom-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+    }
+    &__top-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 13px;
+        padding: 20px 30px;
+        text-align: center;
+        &:nth-child(1) {
+            background-color: #ccc6c6;
+        }
+        &:nth-child(2) {
+            background-color: #f0eded;
+        }
+        &:nth-child(3) {
+            background-color: #fadcd6;
+        }
+        &:nth-child(4) {
+            background-color: #e5c7b5;
+        }
+    }
+    &__item-number {
+        font-size: 38px;
+        font-weight: 700;
+    }
+    &__item-title {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    &__bottom-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 13px;
+        padding: 20px 30px;
+        text-align: center;
+        &:nth-child(1) {
+            background-color: #f0eded80;
+        }
+        &:nth-child(2) {
+            padding: 0;
+        }
+        &:nth-child(3) {
+            background-color: #ccc6c6;
+        }
+    }
+    &__photo {
+        width: 100%;
+    }
+}
