@@ -6,22 +6,29 @@
     padding-top: 70px;
     padding-bottom: 30px;
     &__items {
-        width: 770px;
         padding-top: 30px;
         margin: 0 auto;
         list-style-type: none;
     }
-    &__wrapper {
+    &__item {
         position: relative;
-        }
+    }
     &__text {
+        width: 770px;
         font-size: 36px;
         line-height: 1.5em;
         font-weight: 500;
+        margin: 0 auto;
         margin-bottom: 100px;
     }
     &__author-name {
         display: block;
         margin-bottom: 120px;
     }
+}
+.quote-l {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    z-index: 10;
 }
