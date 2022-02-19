@@ -33,20 +33,93 @@
     }
     &__content {
         display: flex;
-        align-items: center;
-        justify-content: center;
         min-height: 600px;
-        text-align: center;
-        background: linear-gradient(to bottom, white 50%, #E8EFF1 50%);
+        text-align: left;
+        background: url(../../img/header-bg.jpg) center/cover no-repeat;
+       /* background: linear-gradient(to left, #fae5e1 50%, #E8EFF1 50%); */
     }
     &__wrapper {
-        transform: translateY(10%);
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__inner {
+        display: flex;
+        position: absolute;
+        left: 45px;
+        bottom: 50%;
+        transform: translateY(50%);
+        font-size: 13px;
+        &-text {
+            margin-left: 35px;
+        }
     }
     &__title {
-        font-size: 126px;
-        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 24px;
     }
     &__subtitle {
-        font-size: 36px;
+        font-size: 18px;
     }
+}
+.header-form {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 15% 15% 60% 10%;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 13px;
+    margin: 0 auto;
+    &__label {
+        width: 100%;    
+    }
+    &__input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+        outline: none;
+        padding: 0 5px;
+        &:hover {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            transition: all 0.3s;
+        }
+        &:focus {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            transition: all 0.3s;
+        }
+        &--required:not(.header-form__input--required:placeholder-shown) {
+            &:invalid {
+                border-bottom: 1px solid rgb(255, 0, 0);
+            }
+        }
+    }
+    &__textarea {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        resize: none;
+        border-bottom: 1px solid #000000;
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        padding: 0 5px;
+        &:hover {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            transition: all 0.3s;
+        }
+        &:focus {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+    }
+    &__btn {
+        grid-column: 1/-1;
+        background-color: transparent;
+        border: none;
+    }
+}
+.important {
+    color: rgb(255, 0, 0);
 }

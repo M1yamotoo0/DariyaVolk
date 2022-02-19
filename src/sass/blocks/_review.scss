@@ -12,6 +12,25 @@
     }
     &__item {
         position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            top: 0;
+            right: 15%;
+            background: url(../../icons/quote-l.svg) 0 0/100% no-repeat;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            top: 0;
+            left: 15%;
+            background: url(../../icons/quote-l.svg) 0 0/100% no-repeat;
+            transform: rotate(180deg);
+        }
     }
     &__text {
         width: 770px;
@@ -25,10 +44,4 @@
         display: block;
         margin-bottom: 120px;
     }
-}
-.quote-l {
-    position: absolute;
-    top: -20px;
-    left: 50px;
-    z-index: 10;
 }

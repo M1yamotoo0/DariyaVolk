@@ -50,8 +50,49 @@
 
         <div class="header__content">
             <div class="header__wrapper">
-                <h1 class="header__title">Дарья Волк</h1>
-                <h2 class="header__subtitle">Психотерапевт</h2>
+                <div class="header__inner">
+                    <img class="header__content-photo" src="img/photo.webp" alt="photo" width="200" height="250">
+                    <div class="header__inner-text">
+                        <h1 class="header__title">Дарья Волк</h1>
+                        <h2 class="header__subtitle">Психотерапевт</h2>
+                        <p class="header__descr">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad natus suscipit maiores magni
+                            provident odit culpa repellendus mollitia quidem exercitationem nulla necessitatibus dolor
+                            blanditiis aperiam amet fuga, eaque ratione pariatur?
+                        </p>
+                        <a href="tel:+375296832860" class="phone">
+                            +375 (29) 683 28 60
+                        </a>
+                        <a href="tel:+375292535773" class="phone">
+                            +375 (29) 253 57 73
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrapper">
+                <form class="header-form">
+                    <label class="header-form__label">
+                        Имя
+                        <input type="text" class="header-form__input">
+                    </label>
+                    <label class="header-form__label">
+                        Фамилия
+                        <input type="text" class="header-form__input">
+                    </label>
+                    <label class="header-form__label">
+                        Эл. почта<span class="important">*</span>
+                        <input type="email" class="header-form__input header-form__input--required"
+                            placeholder="ivanov@mail.ru" required>
+                    </label>
+                    <label class="header-form__label">
+                        Моб. телефон
+                        <input type="tel" class="header-form__input">
+                    </label>
+                    <textarea class="header-form__textarea" name="" id="" cols="58" rows="5"></textarea>
+                    <button class="header-form__btn" type="submit">
+                        Отправить
+                    </button>
+                </form>
             </div>
         </div>
     </header>
@@ -191,14 +232,6 @@
                     <span class="review__author-name">
                         Михаил М. 47 лет
                     </span>
-                    <svg class="quote-l" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
-                        <path
-                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                    </svg>
-                    <svg class="quote-r" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
-                        <path
-                            d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
-                    </svg>
                 </li>
                 <li class="review__item">
                     <p class="review__text">
@@ -236,7 +269,59 @@
         </section>
     </main>
     <footer class="footer">
-
+        <div class="footer__container">
+            <div class="footer__connection">
+                <address class="footer__address">
+                    ул. Арбат, 1а, Москва<br>
+                    119019, Россия
+                </address>
+                <a href="email:ms3000@mail.ru" class="footer__email">
+                    ms3000@mail.ru
+                </a>
+                <a href="tel:+375296832860" class="footer__phone">
+                    +375 (29) 683 28 60
+                </a>
+                <a href="tel:+375292535773" class="footer__phone">
+                    +375 (29) 253 57 73
+                </a>
+            </div>
+            <p class="footer__working-mode">
+                ПН–ПТ: 07:00–22:00<br>
+                СБ: 08:00–22:00<br>
+                ВС: 08:00–23:00
+            </p>
+            <form class="footer-form">
+                <label class="footer-form__label">
+                    Имя
+                    <input type="text" class="footer-form__input">
+                </label>
+                <label class="footer-form__label">
+                    Фамилия
+                    <input type="text" class="footer-form__input">
+                </label>
+                <label class="footer-form__label">
+                    Эл. почта<span class="important">*</span>
+                    <input type="email" class="footer-form__input footer-form__input--required"
+                        placeholder="ivanov@mail.ru" required>
+                </label>
+                <label class="footer-form__label">
+                    Моб. телефон
+                    <input type="tel" class="footer-form__input">
+                </label>
+                <textarea class="footer-form__textarea" name="" id="" cols="58" rows="5"></textarea>
+                <button class="footer-form__btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link"></a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link"></a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
