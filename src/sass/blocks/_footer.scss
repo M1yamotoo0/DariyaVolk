@@ -1,0 +1,82 @@
+.footer {
+    padding-top: 60px;
+    font-size: 13px;
+    &__container {
+        display: grid;
+        grid-template-columns: 20% 20% 60%;
+        width: 1140px;
+        margin: 0 auto;
+    }
+    &__connection {
+        display: flex;
+        flex-direction: column;
+    }
+    &-form {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 15% 15% 60% 10%;
+        gap: 20px;
+        font-size: 13px;
+        margin: 0 auto;
+        &__label {
+            width: 100%;    
+        }
+        &__input {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #000000;
+            outline: none;
+            padding: 0 5px;
+            &:hover {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                transition: all 0.3s;
+            }
+            &:focus {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                transition: all 0.3s;
+            }
+            &--required:not(.header-form__input--required:placeholder-shown) {
+                &:invalid {
+                    border-bottom: 1px solid rgb(255, 0, 0);
+                }
+            }
+        }
+        &__textarea {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            resize: none;
+            border-bottom: 1px solid #000000;
+            grid-column: 1/-1;
+            grid-row: 3/4;
+            padding: 0 5px;
+            &:hover {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                transition: all 0.3s;
+            }
+            &:focus {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            }
+        }
+        &__btn {
+            grid-column: 1/-1;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    &__social {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        &-item {
+            margin-right: 10px;
+        }
+        &-link {
+            display: block;
+            width: 27px;
+            height: 27px;
+            background: url(../../icons/vk-icon.webp) 0 0/100% no-repeat;
+        }
+    }
+}
