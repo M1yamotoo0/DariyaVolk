@@ -19,7 +19,7 @@
             height: 45px;
             top: 0;
             right: 15%;
-            background: url(../../icons/quote-l.svg) 0 0/100% no-repeat;
+            background: url(../icons/quote-l.svg) 0 0/100% no-repeat;
         }
         &::before {
             content: '';
@@ -28,7 +28,7 @@
             height: 45px;
             top: 0;
             left: 15%;
-            background: url(../../icons/quote-l.svg) 0 0/100% no-repeat;
+            background: url(../icons/quote-l.svg) 0 0/100% no-repeat;
             transform: rotate(180deg);
         }
     }
